@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymyleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<!--所有的html元素都可以被thymyleaf接管-->
+<!--使用th标签可以获取model里面的值 utext代表不转义-->
+<body>
+<div th:text="${msg}"></div>
+<div th:utext="${msg}"></div>
+<hr>
+<h3 th:each="user:${users}" th:text="${user}">
+
+</h3>
+</body>
+</html>
